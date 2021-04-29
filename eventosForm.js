@@ -1,4 +1,7 @@
 const eventoSubmit = document.querySelector('form');
+const aulaAnterior = document.getElementById('aula-anterior-btn');
+const asyncMeme = document.getElementById('assincronismo-meme-btn');
+const asyncClass = document.getElementById('assincronismo-2-btn')
 
 eventoSubmit.addEventListener('submit', (event) => {
   const nomeObjeto = document.getElementById('meu-nome');
@@ -81,4 +84,19 @@ inputNome.addEventListener('keyup', function(event) {
       event.target.style.backgroundColor = 'red';
     })
   })
+})
+
+aulaAnterior.addEventListener('click', (event) => {
+  const aulaAnteriorDiv = document.getElementById('aula-anterior');
+  aulaAnteriorDiv.classList.toggle('aula-anterior');
+})
+
+asyncMeme.addEventListener('click', (event) => {
+  const aulaAnteriorDiv = document.getElementById('assincronismo-meme');
+  aulaAnteriorDiv.classList.toggle('aula-anterior');
+})
+
+asyncClass.addEventListener('click', (event) => {
+  const aulaAnteriorDiv = document.getElementById('assincronismo-2');
+  aulaAnteriorDiv.classList.toggle('aula-anterior');
 })

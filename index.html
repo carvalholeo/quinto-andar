@@ -5,33 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="padrao.css">
 </head>
 <body>
-  <form action="">
-    <span>O campo nome precisa ter</span>
-    <ul>
-      <li>Nome e sobrenome</li>
-      <li>No mínimo 5 caracteres</li>
-      <li>No máximo 100 caracteres</li>
-    </ul>
-    <label for="meu-nome">Nome completo</label>
-    <input type="text" name="meu-nome" id="meu-nome">
+  <button id="assincronismo-meme-btn">Assincronismo 1</button>
+  <button id="assincronismo-2-btn">Assincronismo 2</button>
+  <button id="aula-anterior-btn">Aula anterior</button>
+  <div class="aula-anterior" id="aula-anterior">
+    <form action="">
+      <span>O campo nome precisa ter</span>
+      <ul>
+        <li>Nome e sobrenome</li>
+        <li>No mínimo 5 caracteres</li>
+        <li>No máximo 100 caracteres</li>
+      </ul>
+      <label for="meu-nome">Nome completo</label>
+      <input type="text" name="meu-nome" id="meu-nome">
 
-    <br />
+      <br />
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
 
-    <br />
+      <br />
 
-    <label for="endereco">Endereço</label>
-    <input type="text" name="endereco" id="endereco">
-    <br />
+      <label for="endereco">Endereço</label>
+      <input type="text" name="endereco" id="endereco">
+      <br />
 
-    <button type="reset">Apagar tudo</button>
-    <br />
-    <button type="submit">Enviar</button>
-  </form>
+      <button type="reset">Apagar tudo</button>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <div id="assincronismo-meme" class="aula-anterior">
+    <img src="https://img.devrant.com/devrant/rant/r_2164904_eJEEh.jpg" alt="Cat in a tree being rescued by a asynchronous mode.">
+  </div>
+  <div id="assincronismo-2" class="aula-anterior">
+    <div id="resultado-promise"></div>
+  </div>
+
   <script src="eventosForm.js"></script>
+  <script src="promises.js"></script>
 </body>
 </html>
