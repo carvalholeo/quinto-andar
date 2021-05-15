@@ -7,7 +7,8 @@ eventoSubmit.addEventListener('submit', (event) => {
   const nomeObjeto = document.getElementById('meu-nome');
   const meuNome = nomeObjeto.value;
   const nomeSemEspaco = meuNome.trim();
-  const nomeESobrenome = nomeSemEspaco.split(' ').filter(nome => nome !=='' || nome !== ' ');
+  const regex = new RegExp(' ', 'g');
+  const nomeESobrenome = nomeSemEspaco.split(' ').filter(nome => nome !=='' || !regex.test(nome));
 
   const blocklist = [
     'puta',

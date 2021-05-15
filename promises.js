@@ -1,15 +1,19 @@
+'use strict';
+
+// @ts-check
+
 const divPromise = document.querySelector('#resultado-promise')
 
-// fetch('https://fakestoreapi.com/products/1')
-//   .then(resposta =>  resposta.json())
-//   .then((batata) => {
-//     //lógica aqui
-//     console.log(batata)
-//   })
-//   .then(resposta => [
-//     //lógica aqui
-//   ])
-//   .catch(erro => console.log(erro));
+fetch('https://fakestoreapi.com/products/1')
+  .then(resposta =>  resposta.json())
+  .then((batata) => {
+    //lógica aqui
+    console.log(batata)
+  })
+  .then(resposta => {
+    //lógica aqui
+  })
+  .catch(erro => console.log(erro));
 
 
 async function pegarJSON() {
@@ -24,7 +28,7 @@ async function pegarJSON() {
   }
 }
 
-const resultado = pegarJSON().then(resposta => console.log(resposta))
+// const resultado = pegarJSON().then(resposta => console.log(resposta))
 
 // divPromise.innerText = 'Volte no console';
 
